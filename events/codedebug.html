@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code debug</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #ffeb3b;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: clamp(2rem, 5vw, 3rem); /* Fully responsive */
+    text-align: center;
+    color: black;
+    margin-bottom: 3rem;
+    text-shadow: 3px 3px 0px #c7d2fe;
+    line-height: 1.2;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1300px; /* Updated max-width */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 500px; /* Constrain size */
+    aspect-ratio: 1; /* Maintain square ratio */
+    margin-bottom: 2rem;
+}
+
+.image-wrapper img {
+    width: 100%; /* Fit to wrapper */
+    height: 100%;
+    object-fit: contain; /* Adjust for scaling */
+}
+
+.rules-section {
+    flex: 1;
+    background-color: #00e5ff;
+    padding: 2.5rem; /* Updated padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.rules-title {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rules-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rules-list li::before {
+    content: "•";
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.register-button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+}
+
+.register-button:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+}
+
+.contact {
+    background-color: #9c27b0;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-family: 'Bungee Shade', cursive;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact p {
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #ff4d4d; /* Bright red background */
+    color: black; /* Black text for contrast */
+    font-family: 'Roboto', sans-serif; /* Simple and clean font */
+    font-size: 1rem; /* Normal text size */
+    font-weight: bold; /* Bold text for emphasis */
+    border: 2px solid black; /* Bold black border */
+    padding: 0.75rem 1.5rem; /* Large padding for prominence */
+    border-radius: 6px; /* Slight rounding for modern look */
+    cursor: pointer;
+    text-shadow: -1px -1px 0px white, 1px 1px 0px black; /* Layered shadow */
+    box-shadow: 6px 6px 0px black; /* Bold shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-4px); /* Slight lift on hover */
+    box-shadow: 8px 8px 0px black; /* Deeper shadow */
+}
+
+.back-button:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 4px 4px 0px black; /* Reduced shadow for pressed look */
+}
+
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">← Back</button>
+    
+    <div class="main-content">
+        <h1>Code Debug</h1>
+        
+        <div class="container">
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img src="" alt="Event Poster">
+                </div>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <button class="register-button">Register Now!</button>
+                </a>
+                
+            </div>
+            
+            <div class="rules-section">
+                <h2 class="rules-title">Rules and Regulations</h2>
+                <ul class="rules-list">
+                    <li>Presentations must be original research work.</li>
+                    <li>Presentations should follow IEEE format.</li>
+                    <li>A team can consists of 1 - 3 members</li>
+                    <li>Each presenter has 15 minutes, including Q&A.</li>
+                    <li>Slides must be in PDF format.</li>
+                    <li>Slides shouldn't exceed 7 slides.</li>
+                    <li>Plagiarism will result in disqualification.</li>
+                    <li>Hate speech and violence against participants isn't allowed and tolerated.</li>
+                    <li>Judges' decision is final.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <h2>Contact Information</h2>
+        <p>
+            <strong>Event Coordinator:</strong> DR.T Manikandan<br>
+            <strong>Phone:</strong> +91 8610900952<br>
+            <strong>Email:</strong> coordinator@example.com
+        </p>
+    </div>
+</body>
+</html>
+

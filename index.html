@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revotronics 25'</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.4/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#hero" class="active">HOME</a>
+                <a href="#about-rec">ABOUT</a>
+                <a href="#events">EVENTS</a>
+                <a href="#team">TEAM</a>
+                <a href="#login">LOGIN</a>
+            </div>
+            <div class="mobile-nav">
+                <a href="#hero" class="active">HOME</a>
+                <a href="#about-rec">ABOUT</a>
+                <a href="#events">EVENTS</a>
+                <a href="#team">TEAM</a>
+                <a href="#login">LOGIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="images/revo_hero_img_1.png" alt="Revotronics Event Poster">
+                </div>
+                <div class="hero-text">
+                    <h1>REVOTRONICS<br><span class="year">25'</span></h1>
+                    <p>Bold Innovation. Raw Energy. Unleashing Tech.</p>
+                    <div class="buttons">
+                        <button class="btn primary">Register</button>
+                        <button class="btn secondary">Explore Events</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-us" id="about-rec">
+        <div class="container">
+            <h1 class="main-heading">About Us</h1>
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="images/REC.jpg" alt="REC Campus">
+                </div>
+                <div class="about-text">
+                    <h2>About REC</h2>
+                    <p>Rajalakshmi Engineering College is an autonomous Institution affiliated with Anna University, which was established in the year 1997. As a proud Institution with 26 years of academic excellence it has been ranked as the third most preferred private Engineering college in Tamil Nadu. This Institution has been consistently providing high quality professionals by offering 19 UG, 11 PG courses, and Management studies along with a school of architecture and a school of nursing.</p>
+                </div>
+            </div>
+            <div class="about-section reverse" id="about-ece">
+                <div class="about-image">
+                    <img src="images/ECE.jpg" alt="ECE Department">
+                </div>
+                <div class="about-text">
+                    <h2>About ECE</h2>
+                    <p>The Department of Electronics and Communication Engineering was established in 1997. This department offers cutting-edge programs at the Undergraduate, Postgraduate, and Ph.D. levels. From its inception, the Department of ECE has fostered a culture of research orientation among its students, nurturing the development of highly-skilled researchers. More than 95% of eligible ECE students are placed in reputable companies each year. This department has consistently produced globally competent Electronics and Communication Engineers since its establishment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EVENTS DA MAPLA-->
+
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title">EVENTS</h2>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card" onclick="navigateToEvent('event1')">
+                    <div class="event-image">
+                        <img src="/images/paperpresentation.png" alt="Technical Paper Presentation">
+                        <div class="event-overlay">
+                            <h3>Technical Paper Presentation</h3>
+                            <span class="event-tag">CORE</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="event-card" onclick="navigateToEvent('event2')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Project Expo">
+                        <div class="event-overlay">
+                            <h3>Project Expo</h3>
+                            <span class="event-tag">FLAGSHIP</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="event-card" onclick="navigateToEvent('event3')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Circuit Debugging">
+                        <div class="event-overlay">
+                            <h3>Circuit Debugging</h3>
+                            <span class="event-tag">TECHNICAL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="event-card" onclick="navigateToEvent('event4')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Code Debug">
+                        <div class="event-overlay">
+                            <h3>Code Debug</h3>
+                            <span class="event-tag">CODING</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="event-card" onclick="navigateToEvent('event5')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Tech Quiz">
+                        <div class="event-overlay">
+                            <h3>Tech Quiz</h3>
+                            <span class="event-tag">BRAIN TEASER</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 6 -->
+                <div class="event-card" onclick="navigateToEvent('event6')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="IoT Workshop">
+                        <div class="event-overlay">
+                            <h3>IoT Workshop</h3>
+                            <span class="event-tag">WORKSHOP</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 7 -->
+                <div class="event-card" onclick="navigateToEvent('event7')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Ideathon">
+                        <div class="event-overlay">
+                            <h3>Ideathon</h3>
+                            <span class="event-tag">INNOVATION</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 8 -->
+                <div class="event-card" onclick="navigateToEvent('event8')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Tech Talks">
+                        <div class="event-overlay">
+                            <h3>Tech Talks</h3>
+                            <span class="event-tag">KEYNOTE</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 9 -->
+                <div class="event-card" onclick="navigateToEvent('event9')">
+                    <div class="event-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Robotics Challenge">
+                        <div class="event-overlay">
+                            <h3>Robotics Challenge</h3>
+                            <span class="event-tag">ROBOTICS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+    <div class="container">
+        <!-- Header Section -->
+        <h1 class="title">MEET OUR TEAM</h1>
+        <p class="subtitle">
+            Meet the dedicated faculty members and coordinators behind Revotronics 25' who make innovation and technical excellence possible.
+        </p>
+        <!-- Team Grid -->
+        <div class="team-grid" id="teamGrid">
+            <!-- Team members -->
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Bhagalakshmi">
+                    </div>
+                    <h3 class="member-name">Dr. Bhagalakshmi</h3>
+                    <div class="member-role">HOD</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: VLSI Design</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Manikandan">
+                    </div>
+                    <h3 class="member-name">Dr. Manikandan</h3>
+                    <div class="member-role">AHOD</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: Communication Systems</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Gayathri">
+                    </div>
+                    <h3 class="member-name">Dr. Gayathri</h3>
+                    <div class="member-role">Chief Coordinator</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: Signal Processing</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Tilakavathy">
+                    </div>
+                    <h3 class="member-name">Dr. Tilakavathy</h3>
+                    <div class="member-role">Professor</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: </p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Sudharshan">
+                    </div>
+                    <h3 class="member-name">Dr. Sudharshan</h3>
+                    <div class="member-role">Professor</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: </p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card-shadow"></div>
+                <div class="team-card-content">
+                    <div class="image-container">
+                        <img src="https://placeholder.svg?height=400&width=400" alt="Dr. Gururaj">
+                    </div>
+                    <h3 class="member-name">Dr. Gururaj</h3>
+                    <div class="member-role">Professor</div>
+                    <p class="member-department">ECE Department</p>
+                    <p class="member-specialization">Specialization: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="rules" class="rules-section">
+        <div class="container">
+          <h2 class="section-title">Rules</h2>
+          <div class="rules-container">
+            <ul id="rulesList" class="rules-list">
+                <li>On spot registration is not entertained.</li>
+                <li>No refund on the registration fee will be entertained.</li>
+                <li>Participants are strictly advised to refrain themselves from using abusive language, hate speech and politics inside the campus</li>
+                <li>We have zero tolerancy policy on consumption of tobacco, liquor and drugs inside the campus once found guilty harsh steps will be taken on the participants.</li>
+                <li>Rules are subjected to change at the discretion of Management and Event organisers before and duing the commencement of an event.</li>
+                <li>Transport facilites via college bus will be provided. Please refer <a href="https://www.rectransport.com/" target="_blank">Transportation</a> for bus timings and routes </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq-section">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-container">
+            <div class="faq-item">
+              <button class="faq-question">What is Revotronics 25'?</button>
+              <div class="faq-answer">
+                <p>Revotronics 25' is an annual technical symposium organized by the Department of Electronics and Communication Engineering of Rajalakshmi Engineering College.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">When and where is Revotronics 25' taking place?</button>
+              <div class="faq-answer">
+                <p>Revotronics 25' is scheduled for 16 Febuary 2025 at REC campus. Please check our social pages for the most up-to-date information.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">How can I register for Revotronics 25'?</button>
+              <div class="faq-answer">
+                <p>You can login or signup to our website and check event pages for more details.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">What events are part of Revotronics 25'?</button>
+              <div class="faq-answer">
+                <p>Revotronics 25' features a variety of events including technical paper presentations, project expos, workshops, and more. Check our Events section for a full list.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Will Transportation be arranged for other college participants?</button>
+                <div class="faq-answer">
+                  <p>I'm glad you asked, YES! you can checkout the bus route and timings in <a href="https://www.rectransport.com/" target="_blank">REC Transport website</a>. </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Us Section -->
+      <section class="directory">
+        <h1 class="title">Query? - Contact Us</h1>
+        <div class="grid">
+            <div class="card">
+                <h2 class="name">Osama Bin Laden</h2>
+                <p class="role">Organiser</p>
+                <div class="contact-info">
+                    <a href="tel:7010464171" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        1234567890
+                    </a>
+                    <a href="mailto:something@someone.com" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        binladen@terrorism.com
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="name">Leo Das</h2>
+                <p class="role">Logistics</p>
+                <div class="contact-info">
+                    <a href="tel:2345678901" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        2345678901
+                    </a>
+                    <a href="mailto:aisha.p@example.com" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        leodas@badass.com
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="name">Vinayak mahadev</h2>
+                <p class="role">Kadavul</p>
+                <div class="contact-info">
+                    <a href="tel:2345678901" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        2345678901
+                    </a>
+                    <a href="mailto:aisha.p@example.com" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        leodas@badass.com
+                    </a>
+                </div>
+            </div><div class="card">
+                <h2 class="name">Kanguva</h2>
+                <p class="role">King</p>
+                <div class="contact-info">
+                    <a href="tel:2345678901" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        2345678901
+                    </a>
+                    <a href="mailto:aisha.p@example.com" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        leodas@badass.com
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="name">Vettaiyan</h2>
+                <p class="role">Officer</p>
+                <div class="contact-info">
+                    <a href="tel:2345678901" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        2345678901
+                    </a>
+                    <a href="mailto:aisha.p@example.com" class="link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        leodas@badass.com
+                    </a>
+                </div>
+            </div>
+                </div>
+            </section>
+  
+  
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Revotronics 25'</h3>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">
+                <img src="images/logo-instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="images/logo-whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>        
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Revotronics 25'. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
